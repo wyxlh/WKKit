@@ -92,18 +92,18 @@
 - (void)navigationCanDragBack:(BOOL)canDragBack;
 
 
-/**
- *  开始加载动画
- */
--(void)startLoading;
-
--(void)startHudLoading;
-
-/**
- *  结束动画
- */
--(void)stopLoading;
-
--(void)StopHudLoaing;
+///**
+// *  开始加载动画
+// */
+//-(void)startLoading;
+//
+//-(void)startHudLoading;
+//
+///**
+// *  结束动画
+// */
+//-(void)stopLoading;
+//
+//-(void)StopHudLoaing;
 
 @end

@@ -8,11 +8,11 @@
 
 #import "WKBaseViewController.h"
 #import "AppDelegate.h"
-#import "TYDotIndicatorView.h"
-#import "JHUD.h"
+//#import "TYDotIndicatorView.h"
+//#import "JHUD.h"
 @interface WKBaseViewController ()
-@property (nonatomic,strong)TYDotIndicatorView *hudView;
-@property (nonatomic) JHUD *HView;
+//@property (nonatomic,strong)TYDotIndicatorView *hudView;
+//@property (nonatomic) JHUD *HView;
 @end
 #define ItemImagewidth 30.0f
 #define ItemButtonwidth 50.0f
@@ -286,60 +286,60 @@
         [((WKNavigationController *)(self.navigationController)) navigationCanDragBack:canDragBack];
     }
 }
-/**
- *  开始加载动画
- */
--(void)startLoading{
-    self.hudView = [[TYDotIndicatorView alloc] initWithFrame:CGRectMake(30, CGRectGetHeight(self.view.frame)/2,100, 100) dotStyle:TYDotIndicatorViewStyleCircle dotColor:CustomColor(255, 255, 255, 1) dotSize:CGSizeMake(6,6)];
-    [self.hudView setCenter:self.view.center];
-    self.hudView.backgroundColor =CustomColor(0, 0, 0, 0.7);
-    //    darkCircleDot.hidden=YES;
-    UIImageView *imageView=[[UIImageView alloc]initWithFrame:CGRectMake(30, CGRectGetHeight(self.hudView.frame)/2-35, 40, 40)];
-    imageView.image=[UIImage imageNamed:@"HomePage_addressList"];
-    [self.hudView addSubview:imageView];
-    UILabel *title=[[UILabel alloc]initWithFrame:CGRectMake(0, CGRectGetHeight(imageView.frame)+20, CGRectGetWidth(self.hudView.frame), 20)];
-    title.text=@"加载中...";
-    title.font=[UIFont systemFontOfSize:13];
-    title.textAlignment=NSTextAlignmentCenter;
-    title.textColor=[UIColor whiteColor];
-    [self.hudView addSubview:title];
-    [self.hudView startAnimating];
-    self.hudView.layer.cornerRadius = 5.0f;
-    [self.view addSubview:self.hudView];
-}
-
-/**
- *  结束动画
- */
--(void)stopLoading{
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(kRequestTime * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        
-        //GCD减退 试图消失
-        [self.hudView removeFromSuperview];
-        
-        
-    });
-}
-
-/*
- 开始动画
- */
-
--(void)startHudLoading{
-    self.HView=[[JHUD alloc]initWithFrame:CGRectMake(0, NavHeight, ScreenWidth, ScreenHeight-NavHeight)];
-    self.HView.backgroundColor=[UIColor whiteColor];
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"shuaxin" ofType:@"gif"];
-    NSData *data = [NSData dataWithContentsOfFile:path];
-    self.HView.gifImageData = data;
-    self.HView.indicatorViewSize = CGSizeMake(250, 250);
-    self.HView.messageLabel.text = @"Hello ,this is a gif animation";
-    [self.HView showAtView:self.view hudType:JHUDLoadingTypeGifImage];
-}
-
-
--(void)StopHudLoaing{
-    [self.HView hide];
-}
+///**
+// *  开始加载动画
+// */
+//-(void)startLoading{
+//    self.hudView = [[TYDotIndicatorView alloc] initWithFrame:CGRectMake(30, CGRectGetHeight(self.view.frame)/2,100, 100) dotStyle:TYDotIndicatorViewStyleCircle dotColor:CustomColor(255, 255, 255, 1) dotSize:CGSizeMake(6,6)];
+//    [self.hudView setCenter:self.view.center];
+//    self.hudView.backgroundColor =CustomColor(0, 0, 0, 0.7);
+//    //    darkCircleDot.hidden=YES;
+//    UIImageView *imageView=[[UIImageView alloc]initWithFrame:CGRectMake(30, CGRectGetHeight(self.hudView.frame)/2-35, 40, 40)];
+//    imageView.image=[UIImage imageNamed:@"HomePage_addressList"];
+//    [self.hudView addSubview:imageView];
+//    UILabel *title=[[UILabel alloc]initWithFrame:CGRectMake(0, CGRectGetHeight(imageView.frame)+20, CGRectGetWidth(self.hudView.frame), 20)];
+//    title.text=@"加载中...";
+//    title.font=[UIFont systemFontOfSize:13];
+//    title.textAlignment=NSTextAlignmentCenter;
+//    title.textColor=[UIColor whiteColor];
+//    [self.hudView addSubview:title];
+//    [self.hudView startAnimating];
+//    self.hudView.layer.cornerRadius = 5.0f;
+//    [self.view addSubview:self.hudView];
+//}
+//
+///**
+// *  结束动画
+// */
+//-(void)stopLoading{
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(kRequestTime * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        
+//        //GCD减退 试图消失
+//        [self.hudView removeFromSuperview];
+//        
+//        
+//    });
+//}
+//
+///*
+// 开始动画
+// */
+//
+//-(void)startHudLoading{
+//    self.HView=[[JHUD alloc]initWithFrame:CGRectMake(0, NavHeight, ScreenWidth, ScreenHeight-NavHeight)];
+//    self.HView.backgroundColor=[UIColor whiteColor];
+//    NSString *path = [[NSBundle mainBundle] pathForResource:@"shuaxin" ofType:@"gif"];
+//    NSData *data = [NSData dataWithContentsOfFile:path];
+//    self.HView.gifImageData = data;
+//    self.HView.indicatorViewSize = CGSizeMake(250, 250);
+//    self.HView.messageLabel.text = @"Hello ,this is a gif animation";
+//    [self.HView showAtView:self.view hudType:JHUDLoadingTypeGifImage];
+//}
+//
+//
+//-(void)StopHudLoaing{
+//    [self.HView hide];
+//}
 
 
 

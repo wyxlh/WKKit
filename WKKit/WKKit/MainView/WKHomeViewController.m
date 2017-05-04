@@ -46,16 +46,16 @@
 #pragma mark 首页数据获取
 -(void)requestData{
     NSString *homeUrl = @"/home/index";
-    [self startLoading];
+//    [self startLoading];
     WS(weakSelf)
     [WKRequest getWithURLString:homeUrl parameters:nil success:^(WKBaseModel *baseModel) {
-        [weakSelf stopLoading];
+//        [weakSelf stopLoading];
         weakSelf.model=[HomeModel mj_objectWithKeyValues:baseModel.mDictionary];
         DLog(@"%@",weakSelf.model.promotionList);
 //        [weakSelf.tableView reloadData];
        
     } failure:^(NSError *errer) {
-         [weakSelf stopLoading];
+//         [weakSelf stopLoading];
     }];
 
 }

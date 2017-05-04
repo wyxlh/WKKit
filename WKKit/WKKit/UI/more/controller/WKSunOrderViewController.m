@@ -38,7 +38,7 @@
 
 -(void)rightButtonClick:(id)sender{
     DLog(@"sss");
-     [self StopHudLoaing];
+//     [self StopHudLoaing];
 
 }
 
@@ -50,7 +50,7 @@
     NSString *md5=[NSString stringWithFormat:@"%@%@%@",Value,@"",timeString1];
     NSString *accounturl = @"display/getAll";
     NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys:@"", @"userId",timeString1,@"timestamp",[NSString MD5NSString:md5],@"sign",@"20",@"pageSize",[NSString stringWithFormat:@"%ld",(long)pageIndex_all],@"pageIndex", nil];
-    [self startHudLoading];
+//    [self startHudLoading];
     WS(weakSelf)
     [WKRequest postWithURLString:accounturl parameters:params success:^(WKBaseModel *model) {
         weakSelf.sunModel=[WKSunOrderModel mj_objectWithKeyValues:model.mDictionary];
@@ -58,7 +58,7 @@
         _array=weakSelf.sunModel.displayList;
         
     } failure:^(NSError *errer) {
-       [weakSelf StopHudLoaing];
+//       [weakSelf StopHudLoaing];
     }];
    
 }
