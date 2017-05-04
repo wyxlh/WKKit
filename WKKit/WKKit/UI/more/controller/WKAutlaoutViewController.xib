@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WKAutlaoutViewController">
+            <connections>
+                <outlet property="lbl" destination="Iat-xk-MJt" id="lbV-gw-GNg"/>
+                <outlet property="remove" destination="f1i-Xh-sSI" id="xzO-PF-BVr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="view2" destination="PTW-5C-eIb" id="9uj-f6-qRV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PWz-hF-onl">
+                    <rect key="frame" x="103" y="142" width="114" height="71"/>
+                    <color key="backgroundColor" red="0.98431372549999996" green="0.37254901959999998" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="114" id="Efs-28-1mm"/>
+                        <constraint firstAttribute="height" constant="71" id="pLm-Oj-VBI"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PTW-5C-eIb">
+                    <rect key="frame" x="103" y="240" width="114" height="71"/>
+                    <color key="backgroundColor" red="0.18119882047176361" green="0.80415207147598267" blue="0.27565369009971619" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="114" id="d44-mL-svh"/>
+                        <constraint firstAttribute="height" constant="71" id="nMk-Ng-ovP"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CMe-0V-P2Z">
+                    <rect key="frame" x="103" y="339" width="114" height="71"/>
+                    <color key="backgroundColor" red="0.14117647059999999" green="0.40784313729999999" blue="0.50980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="71" id="5cN-uK-G1v"/>
+                        <constraint firstAttribute="width" constant="114" id="Bpf-pK-C0E"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1i-Xh-sSI">
+                    <rect key="frame" x="123" y="451" width="75" height="30"/>
+                    <state key="normal" title="移除第二个"/>
+                    <connections>
+                        <action selector="clickremove:" destination="-1" eventType="touchUpInside" id="Dpb-tO-BMK"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我有一句妈卖批不知当讲不当讲" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iat-xk-MJt">
+                    <rect key="frame" x="66" y="500" width="243" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Iat-xk-MJt" firstAttribute="top" secondItem="f1i-Xh-sSI" secondAttribute="bottom" constant="19" id="4eE-nY-c3p"/>
+                <constraint firstItem="PWz-hF-onl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="142" id="8FU-PN-mDm"/>
+                <constraint firstItem="f1i-Xh-sSI" firstAttribute="top" secondItem="CMe-0V-P2Z" secondAttribute="bottom" constant="41" id="CA1-Wm-slR"/>
+                <constraint firstItem="PTW-5C-eIb" firstAttribute="top" secondItem="PWz-hF-onl" secondAttribute="bottom" constant="27" id="Hdy-bm-CUI"/>
+                <constraint firstItem="CMe-0V-P2Z" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="-27.5" id="fDa-hw-ksU"/>
+                <constraint firstItem="f1i-Xh-sSI" firstAttribute="centerX" secondItem="CMe-0V-P2Z" secondAttribute="centerX" id="g47-sd-JSe"/>
+                <constraint firstItem="PTW-5C-eIb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="-27.5" id="gtS-tm-Lub"/>
+                <constraint firstItem="Iat-xk-MJt" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="l0B-Gu-JYq"/>
+                <constraint firstItem="CMe-0V-P2Z" firstAttribute="top" secondItem="PTW-5C-eIb" secondAttribute="bottom" constant="28" id="qk1-XO-jWm"/>
+                <constraint firstItem="CMe-0V-P2Z" firstAttribute="top" secondItem="PWz-hF-onl" secondAttribute="bottom" priority="999" constant="126" id="rJU-gJ-omY"/>
+                <constraint firstItem="PWz-hF-onl" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="-27.5" id="zo6-ym-ee7"/>
+            </constraints>
+            <point key="canvasLocation" x="-132.5" y="216.5"/>
+        </view>
+    </objects>
+</document>

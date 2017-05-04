@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "CADD29735030DBC1B795FD668B3F6F741D26A972",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "6FFC44AA536D58CBA25D845D4D64B408F38300AF" : 9223372036854775807,
+    "CADD29735030DBC1B795FD668B3F6F741D26A972" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "0FB48EC0-4547-43A4-9671-BE60D163601D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "6FFC44AA536D58CBA25D845D4D64B408F38300AF" : "..\/Downloads\/JHUD",
+    "CADD29735030DBC1B795FD668B3F6F741D26A972" : "WKKit\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "WKKit",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "WKKit.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jinxiansen\/JHUD.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6FFC44AA536D58CBA25D845D4D64B408F38300AF"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/wyxlh\/WKKit",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CADD29735030DBC1B795FD668B3F6F741D26A972"
+    }
+  ]
+}

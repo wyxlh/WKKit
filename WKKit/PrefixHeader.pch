@@ -1,0 +1,15 @@
+//
+//  PrefixHeader.pch
+//  WKKit
+//
+//  Created by 王宇 on 16/9/13.
+//  Copyright © 2016年 王宇. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "WKConfigs.h"
+#import "WKHelp.h"
+
+#endif

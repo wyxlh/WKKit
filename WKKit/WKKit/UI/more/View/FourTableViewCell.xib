@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="FourTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="119.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jnY-pz-Rlq">
+                        <rect key="frame" x="72" y="8" width="240" height="47"/>
+                        <color key="backgroundColor" red="0.97951811550000001" green="0.057078376409999999" blue="0.37056261299999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UrW-bz-tVm">
+                        <rect key="frame" x="72" y="64" width="240" height="47"/>
+                        <color key="backgroundColor" red="0.97951811550000001" green="0.057078376409999999" blue="0.37056261299999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pag-kK-JXV">
+                        <rect key="frame" x="13" y="21" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G3a-6Z-AUW">
+                        <rect key="frame" x="13" y="77" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="jnY-pz-Rlq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="03l-L2-vwl"/>
+                    <constraint firstItem="UrW-bz-tVm" firstAttribute="leading" secondItem="jnY-pz-Rlq" secondAttribute="leading" id="Dc9-ou-IQt"/>
+                    <constraint firstItem="UrW-bz-tVm" firstAttribute="top" secondItem="jnY-pz-Rlq" secondAttribute="bottom" constant="9" id="FJP-hm-muE"/>
+                    <constraint firstItem="G3a-6Z-AUW" firstAttribute="leading" secondItem="pag-kK-JXV" secondAttribute="leading" id="NLl-kd-ojT"/>
+                    <constraint firstItem="G3a-6Z-AUW" firstAttribute="top" secondItem="pag-kK-JXV" secondAttribute="bottom" constant="35" id="RaY-6A-aS6"/>
+                    <constraint firstItem="UrW-bz-tVm" firstAttribute="height" secondItem="jnY-pz-Rlq" secondAttribute="height" id="WIn-BS-TTW"/>
+                    <constraint firstItem="pag-kK-JXV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="X90-Ai-3zS"/>
+                    <constraint firstItem="G3a-6Z-AUW" firstAttribute="width" secondItem="pag-kK-JXV" secondAttribute="width" id="gOv-DK-SCR"/>
+                    <constraint firstItem="jnY-pz-Rlq" firstAttribute="centerY" secondItem="pag-kK-JXV" secondAttribute="centerY" id="hUI-Wv-l0t"/>
+                    <constraint firstItem="jnY-pz-Rlq" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="hWA-1J-JgW"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="UrW-bz-tVm" secondAttribute="bottom" constant="0.5" id="ooe-ch-6Yu"/>
+                    <constraint firstItem="jnY-pz-Rlq" firstAttribute="leading" secondItem="pag-kK-JXV" secondAttribute="trailing" constant="17" id="p5z-QG-mKc"/>
+                    <constraint firstItem="pag-kK-JXV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="13" id="w9m-ft-6JY"/>
+                    <constraint firstItem="UrW-bz-tVm" firstAttribute="width" secondItem="jnY-pz-Rlq" secondAttribute="width" id="wjn-tK-sYC"/>
+                    <constraint firstItem="G3a-6Z-AUW" firstAttribute="height" secondItem="pag-kK-JXV" secondAttribute="height" id="ybb-5s-QKL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.55294117649999996" green="0.4549019608" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+            <point key="canvasLocation" x="381" y="184"/>
+        </tableViewCell>
+    </objects>
+</document>

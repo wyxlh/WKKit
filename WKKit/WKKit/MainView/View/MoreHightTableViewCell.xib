@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MoreHightTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="113"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="112"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="接收系统消息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ua5-MI-r2F">
+                        <rect key="frame" x="14" y="24" width="84" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="已开启" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ej6-cM-oi2">
+                        <rect key="frame" x="264" y="23" width="45" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.18119882047176361" green="0.80415207147598267" blue="0.27565369009971619" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="如果您要关闭或开启Tommy的新消息通知，请在iPhone的“设置” - “通知”功能中，找到应用程序“Tommy”进行更改。" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpQ-RJ-rPD">
+                        <rect key="frame" x="11" y="51" width="296" height="43"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IsR-TW-Kfb">
+                        <rect key="frame" x="0.0" y="111" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="uPD-q2-auV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gpQ-RJ-rPD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="3" id="IES-iZ-Adz"/>
+                    <constraint firstItem="IsR-TW-Kfb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="JLd-u0-vi6"/>
+                    <constraint firstAttribute="trailing" secondItem="IsR-TW-Kfb" secondAttribute="trailing" id="W5X-XH-eHw"/>
+                    <constraint firstItem="gpQ-RJ-rPD" firstAttribute="top" secondItem="ej6-cM-oi2" secondAttribute="bottom" constant="10" id="X40-eg-aZO"/>
+                    <constraint firstItem="Ua5-MI-r2F" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="Z3C-XH-oc3"/>
+                    <constraint firstAttribute="bottom" secondItem="IsR-TW-Kfb" secondAttribute="bottom" constant="0.5" id="c2M-Fs-fdq"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="gpQ-RJ-rPD" secondAttribute="trailing" constant="5" id="gVZ-TP-Ikz"/>
+                    <constraint firstItem="Ua5-MI-r2F" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="24" id="qZi-gl-FTc"/>
+                    <constraint firstAttribute="trailing" secondItem="ej6-cM-oi2" secondAttribute="trailing" constant="11" id="s5f-08-Ju8"/>
+                    <constraint firstItem="ej6-cM-oi2" firstAttribute="centerY" secondItem="Ua5-MI-r2F" secondAttribute="centerY" id="w8n-i0-lz9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="off" destination="ej6-cM-oi2" id="uy1-iW-9m1"/>
+            </connections>
+            <point key="canvasLocation" x="365" y="309.5"/>
+        </tableViewCell>
+    </objects>
+</document>
