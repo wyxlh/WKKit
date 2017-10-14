@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 //    [self.webView loadHTMLString:@"http://taosheh5.qiluzhaoshang.com/Discover/DiscoverLady?discoverId=1&userInfoId=1111" baseURL:nil];
-    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://taosheh5.qiluzhaoshang.com/Discover/DiscoverLady?discoverId=1&userInfoId=1111"]]];
+    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://tsbbcservice.qiluzhaoshang.com/AfterSales/AfterSale.aspx?UId=6179594d585a7552387959377a64353055696a6d4a673d3d"]]];
     // Do any additional setup after loading the view from its nib.
 }
 
